@@ -15,7 +15,7 @@ public class App {
      */
     public static void main(String[] args) throws ClassNotFoundException {
         if (args.length == 0) {
-            String[] path = {"edu.eci.arep.demoService.HelloWebService"};
+            String[] path = {"edu.eci.arep.demoService.WebService"};
             NanoSpringApplication.run(path);
         } else {
             NanoSpringApplication.run(args);
