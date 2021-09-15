@@ -15,7 +15,7 @@ public class PersistenceServiceImpl implements PersistenceService {
     public String getGreeting(String name) throws NanoSpringException {
         String greeting;
         try {
-            URL url = new URL(firebaseURL + "greetings/hello.json");
+            URL url = new URL(firebaseURL);
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(url.openStream()));
             greeting = bufferedReader.readLine();
         } catch (IOException e) {

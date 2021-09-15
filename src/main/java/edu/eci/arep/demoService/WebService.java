@@ -18,6 +18,6 @@ public class WebService {
      */
     @RequestMapping(value = "/hello")
     public static String index(@PathVariable String value) throws NanoSpringException {
-        return persistenceService.getGreeting(value) + " desde NanoSpring";
+        return persistenceService.getGreeting(value) + " Saludos desde el Laboratorio 3";
     }
 }
